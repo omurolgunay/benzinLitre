@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED2F50C5230ACCCA00DB32E3 /* MyTaxiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F50C4230ACCCA00DB32E3 /* MyTaxiResponse.swift */; };
 		EDA2D6E3230AA8B8002694BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6E2230AA8B8002694BE /* AppDelegate.swift */; };
 		EDA2D6E5230AA8B8002694BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6E4230AA8B8002694BE /* ViewController.swift */; };
 		EDA2D6E8230AA8B8002694BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6E6230AA8B8002694BE /* Main.storyboard */; };
 		EDA2D6EA230AA8BA002694BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6E9230AA8BA002694BE /* Assets.xcassets */; };
 		EDA2D6ED230AA8BA002694BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6EB230AA8BA002694BE /* LaunchScreen.storyboard */; };
-		EDA2D6F5230AAF76002694BE /* MyTaxiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6F4230AAF76002694BE /* MyTaxiAPI.swift */; };
+		EDA2D6F5230AAF76002694BE /* MyTaxiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6F4230AAF76002694BE /* MyTaxiApi.swift */; };
 		EE8F24BF29E52A4F819A5AFB /* Pods_benzinLitre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,7 @@
 		C9133EF380676AF0C534DBB6 /* Pods-benzinLitre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-benzinLitre.release.xcconfig"; path = "Pods/Target Support Files/Pods-benzinLitre/Pods-benzinLitre.release.xcconfig"; sourceTree = "<group>"; };
 		CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_benzinLitre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4A510BDF6B202AB2242AF4 /* Pods-benzinLitre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-benzinLitre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-benzinLitre/Pods-benzinLitre.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2F50C4230ACCCA00DB32E3 /* MyTaxiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaxiResponse.swift; sourceTree = "<group>"; };
 		EDA2D6DF230AA8B8002694BE /* benzinLitre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benzinLitre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA2D6E2230AA8B8002694BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA2D6E4230AA8B8002694BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +29,7 @@
 		EDA2D6E9230AA8BA002694BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA2D6EC230AA8BA002694BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA2D6EE230AA8BA002694BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDA2D6F4230AAF76002694BE /* MyTaxiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaxiAPI.swift; sourceTree = "<group>"; };
+		EDA2D6F4230AAF76002694BE /* MyTaxiApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaxiApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ED2F50C1230ABB1B00DB32E3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EDA2D6F4230AAF76002694BE /* MyTaxiApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ED2F50C2230ABB3200DB32E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDA2D6E9230AA8BA002694BE /* Assets.xcassets */,
+				EDA2D6EB230AA8BA002694BE /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED2F50C3230ACCA200DB32E3 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				ED2F50C4230ACCCA00DB32E3 /* MyTaxiResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		EDA2D6D6230AA8B8002694BE = {
 			isa = PBXGroup;
 			children = (
@@ -82,11 +109,11 @@
 			children = (
 				EDA2D6E2230AA8B8002694BE /* AppDelegate.swift */,
 				EDA2D6E4230AA8B8002694BE /* ViewController.swift */,
-				EDA2D6F4230AAF76002694BE /* MyTaxiAPI.swift */,
+				ED2F50C3230ACCA200DB32E3 /* Response */,
+				ED2F50C1230ABB1B00DB32E3 /* API */,
 				EDA2D6E6230AA8B8002694BE /* Main.storyboard */,
-				EDA2D6E9230AA8BA002694BE /* Assets.xcassets */,
-				EDA2D6EB230AA8BA002694BE /* LaunchScreen.storyboard */,
 				EDA2D6EE230AA8BA002694BE /* Info.plist */,
+				ED2F50C2230ABB3200DB32E3 /* Supporting Files */,
 			);
 			path = benzinLitre;
 			sourceTree = "<group>";
@@ -208,7 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA2D6E5230AA8B8002694BE /* ViewController.swift in Sources */,
-				EDA2D6F5230AAF76002694BE /* MyTaxiAPI.swift in Sources */,
+				EDA2D6F5230AAF76002694BE /* MyTaxiApi.swift in Sources */,
+				ED2F50C5230ACCCA00DB32E3 /* MyTaxiResponse.swift in Sources */,
 				EDA2D6E3230AA8B8002694BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +387,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Q92ZA8LP;
 				INFOPLIST_FILE = benzinLitre/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.omurolgunay.benzinLitre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -375,7 +406,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Q92ZA8LP;
 				INFOPLIST_FILE = benzinLitre/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.omurolgunay.benzinLitre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

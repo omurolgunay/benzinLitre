@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let api = MyTaxiApi()
+    
+    var myTaxiList: [MyTaxi]? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        api.fetchMyTaxiData{ response in
+            if let data = response.data{
+                self.myTaxiList = data
+            }
+        }
     }
-
 
 }
 
