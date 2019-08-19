@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED2F50C5230ACCCA00DB32E3 /* MyTaxiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F50C4230ACCCA00DB32E3 /* MyTaxiResponse.swift */; };
+		ED2F50C5230ACCCA00DB32E3 /* BenzinLitreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F50C4230ACCCA00DB32E3 /* BenzinLitreResponse.swift */; };
+		ED2F50C7230B2BBC00DB32E3 /* BenzinLitreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F50C6230B2BBC00DB32E3 /* BenzinLitreVM.swift */; };
+		ED2F50CB230B3E6E00DB32E3 /* BenzinLitreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F50C9230B3E6E00DB32E3 /* BenzinLitreCell.swift */; };
+		ED2F50CC230B3E6E00DB32E3 /* BenzinLitreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2F50CA230B3E6E00DB32E3 /* BenzinLitreCell.xib */; };
 		EDA2D6E3230AA8B8002694BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6E2230AA8B8002694BE /* AppDelegate.swift */; };
-		EDA2D6E5230AA8B8002694BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6E4230AA8B8002694BE /* ViewController.swift */; };
+		EDA2D6E5230AA8B8002694BE /* BenzinLitreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6E4230AA8B8002694BE /* BenzinLitreViewController.swift */; };
 		EDA2D6E8230AA8B8002694BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6E6230AA8B8002694BE /* Main.storyboard */; };
 		EDA2D6EA230AA8BA002694BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6E9230AA8BA002694BE /* Assets.xcassets */; };
 		EDA2D6ED230AA8BA002694BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6EB230AA8BA002694BE /* LaunchScreen.storyboard */; };
-		EDA2D6F5230AAF76002694BE /* MyTaxiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6F4230AAF76002694BE /* MyTaxiApi.swift */; };
+		EDA2D6F5230AAF76002694BE /* BenzinLitreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6F4230AAF76002694BE /* BenzinLitreApi.swift */; };
 		EE8F24BF29E52A4F819A5AFB /* Pods_benzinLitre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,15 +24,18 @@
 		C9133EF380676AF0C534DBB6 /* Pods-benzinLitre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-benzinLitre.release.xcconfig"; path = "Pods/Target Support Files/Pods-benzinLitre/Pods-benzinLitre.release.xcconfig"; sourceTree = "<group>"; };
 		CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_benzinLitre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4A510BDF6B202AB2242AF4 /* Pods-benzinLitre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-benzinLitre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-benzinLitre/Pods-benzinLitre.debug.xcconfig"; sourceTree = "<group>"; };
-		ED2F50C4230ACCCA00DB32E3 /* MyTaxiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaxiResponse.swift; sourceTree = "<group>"; };
+		ED2F50C4230ACCCA00DB32E3 /* BenzinLitreResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreResponse.swift; sourceTree = "<group>"; };
+		ED2F50C6230B2BBC00DB32E3 /* BenzinLitreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreVM.swift; sourceTree = "<group>"; };
+		ED2F50C9230B3E6E00DB32E3 /* BenzinLitreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreCell.swift; sourceTree = "<group>"; };
+		ED2F50CA230B3E6E00DB32E3 /* BenzinLitreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BenzinLitreCell.xib; sourceTree = "<group>"; };
 		EDA2D6DF230AA8B8002694BE /* benzinLitre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benzinLitre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA2D6E2230AA8B8002694BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDA2D6E4230AA8B8002694BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDA2D6E4230AA8B8002694BE /* BenzinLitreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreViewController.swift; sourceTree = "<group>"; };
 		EDA2D6E7230AA8B8002694BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDA2D6E9230AA8BA002694BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA2D6EC230AA8BA002694BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA2D6EE230AA8BA002694BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDA2D6F4230AAF76002694BE /* MyTaxiApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaxiApi.swift; sourceTree = "<group>"; };
+		EDA2D6F4230AAF76002694BE /* BenzinLitreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,7 @@
 		ED2F50C1230ABB1B00DB32E3 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				EDA2D6F4230AAF76002694BE /* MyTaxiApi.swift */,
+				EDA2D6F4230AAF76002694BE /* BenzinLitreApi.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -81,9 +87,28 @@
 		ED2F50C3230ACCA200DB32E3 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				ED2F50C4230ACCCA00DB32E3 /* MyTaxiResponse.swift */,
+				ED2F50C4230ACCCA00DB32E3 /* BenzinLitreResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		ED2F50C8230B3AB600DB32E3 /* BenzinLitre */ = {
+			isa = PBXGroup;
+			children = (
+				ED2F50CD230B3E7200DB32E3 /* BenzinLitreCustomCell */,
+				EDA2D6E4230AA8B8002694BE /* BenzinLitreViewController.swift */,
+				ED2F50C6230B2BBC00DB32E3 /* BenzinLitreVM.swift */,
+			);
+			path = BenzinLitre;
+			sourceTree = "<group>";
+		};
+		ED2F50CD230B3E7200DB32E3 /* BenzinLitreCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED2F50C9230B3E6E00DB32E3 /* BenzinLitreCell.swift */,
+				ED2F50CA230B3E6E00DB32E3 /* BenzinLitreCell.xib */,
+			);
+			path = BenzinLitreCustomCell;
 			sourceTree = "<group>";
 		};
 		EDA2D6D6230AA8B8002694BE = {
@@ -108,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				EDA2D6E2230AA8B8002694BE /* AppDelegate.swift */,
-				EDA2D6E4230AA8B8002694BE /* ViewController.swift */,
+				ED2F50C8230B3AB600DB32E3 /* BenzinLitre */,
 				ED2F50C3230ACCA200DB32E3 /* Response */,
 				ED2F50C1230ABB1B00DB32E3 /* API */,
 				EDA2D6E6230AA8B8002694BE /* Main.storyboard */,
@@ -180,6 +205,7 @@
 			files = (
 				EDA2D6ED230AA8BA002694BE /* LaunchScreen.storyboard in Resources */,
 				EDA2D6EA230AA8BA002694BE /* Assets.xcassets in Resources */,
+				ED2F50CC230B3E6E00DB32E3 /* BenzinLitreCell.xib in Resources */,
 				EDA2D6E8230AA8B8002694BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA2D6E5230AA8B8002694BE /* ViewController.swift in Sources */,
-				EDA2D6F5230AAF76002694BE /* MyTaxiApi.swift in Sources */,
-				ED2F50C5230ACCCA00DB32E3 /* MyTaxiResponse.swift in Sources */,
+				EDA2D6E5230AA8B8002694BE /* BenzinLitreViewController.swift in Sources */,
+				EDA2D6F5230AAF76002694BE /* BenzinLitreApi.swift in Sources */,
+				ED2F50C7230B2BBC00DB32E3 /* BenzinLitreVM.swift in Sources */,
+				ED2F50C5230ACCCA00DB32E3 /* BenzinLitreResponse.swift in Sources */,
+				ED2F50CB230B3E6E00DB32E3 /* BenzinLitreCell.swift in Sources */,
 				EDA2D6E3230AA8B8002694BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

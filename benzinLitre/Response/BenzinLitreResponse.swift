@@ -22,9 +22,9 @@
 import Foundation
 import ObjectMapper
 
-class MyTaxiResponse: Mappable {
+class BenzinLitreResponse: Mappable {
     
-    var data: [MyTaxi]?
+    var data: [BenzinLitreData]?
 
     required init?(map: Map) {
     }
@@ -34,7 +34,7 @@ class MyTaxiResponse: Mappable {
     }
 }
 
-class MyTaxi: Mappable {
+class BenzinLitreData: Mappable {
     var id: Int?
     var cordinate: Dictionary<Double,Double>?
     var state: String?

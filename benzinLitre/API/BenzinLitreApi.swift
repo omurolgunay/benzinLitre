@@ -10,12 +10,12 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-class MyTaxiApi {
+class BenzinLitreApi {
     
-    func fetchMyTaxiData(completion: @escaping (MyTaxiResponse) -> Void) {
+    func fetchBenzinLitreData(completion: @escaping (BenzinLitreResponse) -> Void) {
         let URL = "https://poi-api.mytaxi.com/PoiService/poi/v1?p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891"
         
-        AF.request(URL).responseObject { [weak self] (response: DataResponse<MyTaxiResponse>) in
+        AF.request(URL).responseObject { [weak self] (response: DataResponse<BenzinLitreResponse>) in
             guard let _ = self else { return }
             if let error = response.error {
                 print("Failed to fetch data", error.localizedDescription)
