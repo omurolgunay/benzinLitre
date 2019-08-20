@@ -18,6 +18,7 @@
 		EDA2D6ED230AA8BA002694BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6EB230AA8BA002694BE /* LaunchScreen.storyboard */; };
 		EDA2D6F5230AAF76002694BE /* BenzinLitreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6F4230AAF76002694BE /* BenzinLitreApi.swift */; };
 		EDE5C951230C15B500D0DD6E /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */; };
+		EDE5C955230C8EC500D0DD6E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5C954230C8EC500D0DD6E /* Double+Extension.swift */; };
 		EE8F24BF29E52A4F819A5AFB /* Pods_benzinLitre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		EDA2D6EE230AA8BA002694BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA2D6F4230AAF76002694BE /* BenzinLitreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreApi.swift; sourceTree = "<group>"; };
 		EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
+		EDE5C954230C8EC500D0DD6E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */,
+				EDE5C954230C8EC500D0DD6E /* Double+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				EDA2D6F5230AAF76002694BE /* BenzinLitreApi.swift in Sources */,
 				ED2F50C7230B2BBC00DB32E3 /* BenzinLitreVM.swift in Sources */,
 				ED2F50C5230ACCCA00DB32E3 /* BenzinLitreResponse.swift in Sources */,
+				EDE5C955230C8EC500D0DD6E /* Double+Extension.swift in Sources */,
 				ED2F50CB230B3E6E00DB32E3 /* BenzinLitreCell.swift in Sources */,
 				EDA2D6E3230AA8B8002694BE /* AppDelegate.swift in Sources */,
 				EDE5C951230C15B500D0DD6E /* TimeInterval+Extension.swift in Sources */,

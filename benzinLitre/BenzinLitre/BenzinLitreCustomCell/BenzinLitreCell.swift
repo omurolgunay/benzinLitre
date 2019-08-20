@@ -12,7 +12,7 @@ class BenzinLitreCell: UITableViewCell {
     
     //MARK:- Variables
     static let identifier = "BenzinLitreCell"
-    static let estimatedRowHeight: CGFloat = 100
+    static let estimatedRowHeight: CGFloat = 200
     
     //MARK:- IBOutlets
     
@@ -22,9 +22,14 @@ class BenzinLitreCell: UITableViewCell {
             self.stateLabel.layer.cornerRadius = 3
         }
     }
-    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!{
+        didSet{
+            self.typeLabel.clipsToBounds = true
+            self.typeLabel.layer.cornerRadius = 3
+        }
+    }
     @IBOutlet weak var idLabel: UILabel!
-    
+    @IBOutlet weak var arrowImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

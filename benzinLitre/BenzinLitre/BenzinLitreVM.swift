@@ -16,7 +16,7 @@ class BenzinLitreVM {
     var benzinLitreList: [BenzinLitreData]? = nil
     
     
-    func fetchBetbullData(completion: @escaping () -> Void){
+    func fetchBenzinLitreData(completion: @escaping () -> Void){
         api.fetchBenzinLitreData { [weak self] (response) in
             guard let strongSelf = self else { return }
             strongSelf.benzinLitreList = response.data
@@ -27,8 +27,6 @@ class BenzinLitreVM {
     //Get current location and calculate the distance from selected car
     func calculateDistanceFromGivenCordinate(_ cordinate: (Double,Double), completion: @escaping (String) -> Void ) {
         let locationManager = CLLocationManager()
-        locationManager.requestAlwaysAuthorization()
-        locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
@@ -63,4 +61,16 @@ class BenzinLitreVM {
         }
     }
     
+    func rotateImageToPointTaxi(_ cordinate: (Double,Double)){
+        let locationManager = CLLocationManager()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+        guard let userLatitude = locationManager.location?.coordinate.latitude, let userLongitude = locationManager.location?.coordinate.longitude else { return }
+        
+        
+    }
+    
+
 }
