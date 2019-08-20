@@ -36,7 +36,7 @@ class BenzinLitreResponse: Mappable {
 
 class BenzinLitreData: Mappable {
     var id: Int?
-    var cordinate: Dictionary<Double,Double>?
+    var coordinate: Dictionary<String,Double>?
     var state: String?
     var type: String?
     var heading: Double?
@@ -45,7 +45,7 @@ class BenzinLitreData: Mappable {
     
     func mapping(map: Map) {
         id <- map["id"]
-        cordinate <- map["cordinate"]
+        coordinate <- map["coordinate"]
         state <- map["state"]
         type <- map["type"]
         heading <- map["heading"]

@@ -17,6 +17,7 @@
 		EDA2D6EA230AA8BA002694BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6E9230AA8BA002694BE /* Assets.xcassets */; };
 		EDA2D6ED230AA8BA002694BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6EB230AA8BA002694BE /* LaunchScreen.storyboard */; };
 		EDA2D6F5230AAF76002694BE /* BenzinLitreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6F4230AAF76002694BE /* BenzinLitreApi.swift */; };
+		EDE5C951230C15B500D0DD6E /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */; };
 		EE8F24BF29E52A4F819A5AFB /* Pods_benzinLitre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		EDA2D6EC230AA8BA002694BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA2D6EE230AA8BA002694BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA2D6F4230AAF76002694BE /* BenzinLitreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreApi.swift; sourceTree = "<group>"; };
+		EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				EDA2D6E2230AA8B8002694BE /* AppDelegate.swift */,
 				ED2F50C8230B3AB600DB32E3 /* BenzinLitre */,
+				EDE5C94F230C157900D0DD6E /* Extensions */,
 				ED2F50C3230ACCA200DB32E3 /* Response */,
 				ED2F50C1230ABB1B00DB32E3 /* API */,
 				EDA2D6E6230AA8B8002694BE /* Main.storyboard */,
@@ -141,6 +144,14 @@
 				ED2F50C2230ABB3200DB32E3 /* Supporting Files */,
 			);
 			path = benzinLitre;
+			sourceTree = "<group>";
+		};
+		EDE5C94F230C157900D0DD6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				ED2F50C5230ACCCA00DB32E3 /* BenzinLitreResponse.swift in Sources */,
 				ED2F50CB230B3E6E00DB32E3 /* BenzinLitreCell.swift in Sources */,
 				EDA2D6E3230AA8B8002694BE /* AppDelegate.swift in Sources */,
+				EDE5C951230C15B500D0DD6E /* TimeInterval+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Q92ZA8LP;
 				INFOPLIST_FILE = benzinLitre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Q92ZA8LP;
 				INFOPLIST_FILE = benzinLitre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
