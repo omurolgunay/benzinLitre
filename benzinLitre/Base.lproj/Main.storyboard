@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qic-c6-cfc">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,35 +10,92 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Benzin Litre View Controller-->
+        <!--Map-->
+        <scene sceneID="dMi-BZ-bD8">
+            <objects>
+                <viewController storyboardIdentifier="MapViewControllerID" id="rMJ-dc-8yh" customClass="BenzinLitreMapViewController" customModule="benzinLitre" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rrv-Dg-SRf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="E6k-6k-FJm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E6k-6k-FJm" firstAttribute="bottom" secondItem="AHT-2N-wuR" secondAttribute="bottom" id="bHS-Pb-6WY"/>
+                            <constraint firstItem="E6k-6k-FJm" firstAttribute="leading" secondItem="AHT-2N-wuR" secondAttribute="leading" id="eKI-co-xqN"/>
+                            <constraint firstItem="E6k-6k-FJm" firstAttribute="trailing" secondItem="AHT-2N-wuR" secondAttribute="trailing" id="lyb-xH-TBN"/>
+                            <constraint firstItem="E6k-6k-FJm" firstAttribute="top" secondItem="AHT-2N-wuR" secondAttribute="top" id="yjN-aS-HTl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AHT-2N-wuR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="Tvc-85-5aQ"/>
+                    <connections>
+                        <outlet property="map" destination="E6k-6k-FJm" id="OsX-Ow-tIs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kj-0y-hDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330.43478260869568" y="-206.25"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ICI-30-hwr">
+            <objects>
+                <tabBarController id="qic-c6-cfc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="fka-fR-sOE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.1137254902" green="0.72549019609999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Xku-Is-RUq"/>
+                        <segue destination="rMJ-dc-8yh" kind="relationship" relationship="viewControllers" id="Cks-8r-ksh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GcP-bc-14n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1822" y="-186"/>
+        </scene>
+        <!--List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BenzinLitreViewController" customModule="benzinLitre" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewControllerID" id="BYZ-38-t0r" customClass="BenzinLitreViewController" customModule="benzinLitre" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f2d-ha-yCa">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="f2d-ha-yCa" secondAttribute="trailing" id="TED-Sp-Dez"/>
-                            <constraint firstItem="f2d-ha-yCa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="doS-1z-ZUH"/>
-                            <constraint firstItem="f2d-ha-yCa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x9J-wX-qwz"/>
-                            <constraint firstItem="f2d-ha-yCa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yOF-nu-0Qf"/>
+                            <constraint firstItem="f2d-ha-yCa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1K2-7Z-FMq"/>
+                            <constraint firstItem="f2d-ha-yCa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JdV-hp-pNZ"/>
+                            <constraint firstItem="f2d-ha-yCa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U2f-4x-RgX"/>
+                            <constraint firstItem="f2d-ha-yCa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ucn-tH-ZV2"/>
+                            <constraint firstItem="f2d-ha-yCa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ePJ-W2-oCV"/>
+                            <constraint firstItem="f2d-ha-yCa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o1E-Sp-bAr"/>
+                            <constraint firstItem="f2d-ha-yCa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r0J-Fr-VNN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="List" image="list" id="rwg-rI-9h7"/>
                     <connections>
-                        <outlet property="benzinLitreTV" destination="f2d-ha-yCa" id="fUY-OK-3op"/>
+                        <outlet property="benzinLitreTV" destination="f2d-ha-yCa" id="iix-QL-xYW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98.550724637681171" y="20.758928571428569"/>
+            <point key="canvasLocation" x="-1068.1159420289855" y="-205.58035714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list" width="32" height="32"/>
+        <image name="map" width="32" height="32"/>
+    </resources>
 </document>

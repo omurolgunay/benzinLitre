@@ -17,6 +17,10 @@
 		EDA2D6EA230AA8BA002694BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6E9230AA8BA002694BE /* Assets.xcassets */; };
 		EDA2D6ED230AA8BA002694BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6EB230AA8BA002694BE /* LaunchScreen.storyboard */; };
 		EDA2D6F5230AAF76002694BE /* BenzinLitreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6F4230AAF76002694BE /* BenzinLitreApi.swift */; };
+		EDCA6D18230D401C0046A41D /* LocationManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA6D17230D401C0046A41D /* LocationManagerHelper.swift */; };
+		EDCA6D1A230D48BC0046A41D /* NotificationCenterName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA6D19230D48BC0046A41D /* NotificationCenterName+Extension.swift */; };
+		EDCA6D21230D863D0046A41D /* BenzinLitreMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA6D20230D863D0046A41D /* BenzinLitreMapViewController.swift */; };
+		EDCA6D23230D940E0046A41D /* MapKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA6D22230D940E0046A41D /* MapKitHelper.swift */; };
 		EDE5C951230C15B500D0DD6E /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */; };
 		EDE5C955230C8EC500D0DD6E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5C954230C8EC500D0DD6E /* Double+Extension.swift */; };
 		EE8F24BF29E52A4F819A5AFB /* Pods_benzinLitre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */; };
@@ -38,6 +42,10 @@
 		EDA2D6EC230AA8BA002694BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA2D6EE230AA8BA002694BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA2D6F4230AAF76002694BE /* BenzinLitreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreApi.swift; sourceTree = "<group>"; };
+		EDCA6D17230D401C0046A41D /* LocationManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerHelper.swift; sourceTree = "<group>"; };
+		EDCA6D19230D48BC0046A41D /* NotificationCenterName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenterName+Extension.swift"; sourceTree = "<group>"; };
+		EDCA6D20230D863D0046A41D /* BenzinLitreMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreMapViewController.swift; sourceTree = "<group>"; };
+		EDCA6D22230D940E0046A41D /* MapKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitHelper.swift; sourceTree = "<group>"; };
 		EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
 		EDE5C954230C8EC500D0DD6E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,8 +107,9 @@
 		ED2F50C8230B3AB600DB32E3 /* BenzinLitre */ = {
 			isa = PBXGroup;
 			children = (
-				ED2F50CD230B3E7200DB32E3 /* BenzinLitreCustomCell */,
-				EDA2D6E4230AA8B8002694BE /* BenzinLitreViewController.swift */,
+				EDCA6D1B230D4AF40046A41D /* Helpers */,
+				EDCA6D1E230D857A0046A41D /* ListView */,
+				EDCA6D1F230D858F0046A41D /* MapView */,
 				ED2F50C6230B2BBC00DB32E3 /* BenzinLitreVM.swift */,
 			);
 			path = BenzinLitre;
@@ -148,11 +157,38 @@
 			path = benzinLitre;
 			sourceTree = "<group>";
 		};
+		EDCA6D1B230D4AF40046A41D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EDCA6D17230D401C0046A41D /* LocationManagerHelper.swift */,
+				EDCA6D22230D940E0046A41D /* MapKitHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EDCA6D1E230D857A0046A41D /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				ED2F50CD230B3E7200DB32E3 /* BenzinLitreCustomCell */,
+				EDA2D6E4230AA8B8002694BE /* BenzinLitreViewController.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		EDCA6D1F230D858F0046A41D /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				EDCA6D20230D863D0046A41D /* BenzinLitreMapViewController.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		EDE5C94F230C157900D0DD6E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */,
 				EDE5C954230C8EC500D0DD6E /* Double+Extension.swift */,
+				EDCA6D19230D48BC0046A41D /* NotificationCenterName+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,14 +310,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCA6D1A230D48BC0046A41D /* NotificationCenterName+Extension.swift in Sources */,
 				EDA2D6E5230AA8B8002694BE /* BenzinLitreViewController.swift in Sources */,
 				EDA2D6F5230AAF76002694BE /* BenzinLitreApi.swift in Sources */,
+				EDCA6D23230D940E0046A41D /* MapKitHelper.swift in Sources */,
 				ED2F50C7230B2BBC00DB32E3 /* BenzinLitreVM.swift in Sources */,
+				EDCA6D21230D863D0046A41D /* BenzinLitreMapViewController.swift in Sources */,
 				ED2F50C5230ACCCA00DB32E3 /* BenzinLitreResponse.swift in Sources */,
 				EDE5C955230C8EC500D0DD6E /* Double+Extension.swift in Sources */,
 				ED2F50CB230B3E6E00DB32E3 /* BenzinLitreCell.swift in Sources */,
 				EDA2D6E3230AA8B8002694BE /* AppDelegate.swift in Sources */,
 				EDE5C951230C15B500D0DD6E /* TimeInterval+Extension.swift in Sources */,
+				EDCA6D18230D401C0046A41D /* LocationManagerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
