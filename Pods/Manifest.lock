@@ -4,22 +4,30 @@ PODS:
     - Alamofire (= 5.0.0-beta.6)
     - ObjectMapper (~> 3.4)
   - ObjectMapper (3.5.1)
+  - QuickLayout (3.0.0)
+  - SwiftEntryKit (1.1.2):
+    - QuickLayout (= 3.0.0)
 
 DEPENDENCIES:
   - AlamofireObjectMapper
   - ObjectMapper
+  - SwiftEntryKit
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireObjectMapper
     - ObjectMapper
+    - QuickLayout
+    - SwiftEntryKit
 
 SPEC CHECKSUMS:
   Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
   AlamofireObjectMapper: cd819bed60ad326e8920a6c524c19744e15bb237
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  SwiftEntryKit: 08bf114650b41d4d825924211943b6a80801e823
 
-PODFILE CHECKSUM: 6b2fbf7220c8ebbfd179d27133cc7c48419490f4
+PODFILE CHECKSUM: fb1def45c938d0bf79f8b53f7ed4c5df5b0cc982
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.7.5

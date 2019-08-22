@@ -83,7 +83,7 @@ class LocationManagerHelper: NSObject, CLLocationManagerDelegate  {
                 if rotateDegree < 0 {
                     rotateDegree += 360
                 }
-                self.arrowRotateDegreeArray.append(rotateDegree)
+                self.arrowRotateDegreeArray.append(rotateDegree - 180)
             }
         }
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		ED2F50C7230B2BBC00DB32E3 /* BenzinLitreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F50C6230B2BBC00DB32E3 /* BenzinLitreVM.swift */; };
 		ED2F50CB230B3E6E00DB32E3 /* BenzinLitreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F50C9230B3E6E00DB32E3 /* BenzinLitreCell.swift */; };
 		ED2F50CC230B3E6E00DB32E3 /* BenzinLitreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2F50CA230B3E6E00DB32E3 /* BenzinLitreCell.xib */; };
+		ED6765D0230EAC7900DCFA07 /* PopUpCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6765CF230EAC7900DCFA07 /* PopUpCustomView.swift */; };
+		ED6765D4230EACBC00DCFA07 /* PopUpCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6765D3230EACBC00DCFA07 /* PopUpCustomView.xib */; };
 		EDA2D6E3230AA8B8002694BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6E2230AA8B8002694BE /* AppDelegate.swift */; };
 		EDA2D6E5230AA8B8002694BE /* BenzinLitreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2D6E4230AA8B8002694BE /* BenzinLitreViewController.swift */; };
 		EDA2D6E8230AA8B8002694BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA2D6E6230AA8B8002694BE /* Main.storyboard */; };
@@ -23,17 +25,18 @@
 		EDCA6D23230D940E0046A41D /* MapKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA6D22230D940E0046A41D /* MapKitHelper.swift */; };
 		EDE5C951230C15B500D0DD6E /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */; };
 		EDE5C955230C8EC500D0DD6E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5C954230C8EC500D0DD6E /* Double+Extension.swift */; };
-		EE8F24BF29E52A4F819A5AFB /* Pods_benzinLitre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */; };
+		F6FAB2EC8ABF5F0347C99693 /* Pods_benzinLitre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F65B0A125A5038A98DC32 /* Pods_benzinLitre.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C9133EF380676AF0C534DBB6 /* Pods-benzinLitre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-benzinLitre.release.xcconfig"; path = "Pods/Target Support Files/Pods-benzinLitre/Pods-benzinLitre.release.xcconfig"; sourceTree = "<group>"; };
-		CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_benzinLitre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC4A510BDF6B202AB2242AF4 /* Pods-benzinLitre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-benzinLitre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-benzinLitre/Pods-benzinLitre.debug.xcconfig"; sourceTree = "<group>"; };
+		0D1C6C31510C5F6D1B08DC30 /* Pods-benzinLitre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-benzinLitre.debug.xcconfig"; path = "Target Support Files/Pods-benzinLitre/Pods-benzinLitre.debug.xcconfig"; sourceTree = "<group>"; };
+		5B5F65B0A125A5038A98DC32 /* Pods_benzinLitre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_benzinLitre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2F50C4230ACCCA00DB32E3 /* BenzinLitreResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreResponse.swift; sourceTree = "<group>"; };
 		ED2F50C6230B2BBC00DB32E3 /* BenzinLitreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreVM.swift; sourceTree = "<group>"; };
 		ED2F50C9230B3E6E00DB32E3 /* BenzinLitreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreCell.swift; sourceTree = "<group>"; };
 		ED2F50CA230B3E6E00DB32E3 /* BenzinLitreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BenzinLitreCell.xib; sourceTree = "<group>"; };
+		ED6765CF230EAC7900DCFA07 /* PopUpCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpCustomView.swift; sourceTree = "<group>"; };
+		ED6765D3230EACBC00DCFA07 /* PopUpCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpCustomView.xib; sourceTree = "<group>"; };
 		EDA2D6DF230AA8B8002694BE /* benzinLitre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benzinLitre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA2D6E2230AA8B8002694BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA2D6E4230AA8B8002694BE /* BenzinLitreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenzinLitreViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		EDCA6D22230D940E0046A41D /* MapKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitHelper.swift; sourceTree = "<group>"; };
 		EDE5C950230C15B500D0DD6E /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
 		EDE5C954230C8EC500D0DD6E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		F1CCE5BF39FE426C6602B932 /* Pods-benzinLitre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-benzinLitre.release.xcconfig"; path = "Target Support Files/Pods-benzinLitre/Pods-benzinLitre.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,28 +59,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE8F24BF29E52A4F819A5AFB /* Pods_benzinLitre.framework in Frameworks */,
+				F6FAB2EC8ABF5F0347C99693 /* Pods_benzinLitre.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E1BE8DAC5E212883B3BF093 /* Frameworks */ = {
+		9837CEF29C441D1119B859D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE0289028986E635A56AC34B /* Pods_benzinLitre.framework */,
+				5B5F65B0A125A5038A98DC32 /* Pods_benzinLitre.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C55CE3264279EDE793DB8FCC /* Pods */ = {
+		BBED3965F5C907967755E068 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DC4A510BDF6B202AB2242AF4 /* Pods-benzinLitre.debug.xcconfig */,
-				C9133EF380676AF0C534DBB6 /* Pods-benzinLitre.release.xcconfig */,
+				0D1C6C31510C5F6D1B08DC30 /* Pods-benzinLitre.debug.xcconfig */,
+				F1CCE5BF39FE426C6602B932 /* Pods-benzinLitre.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		ED2F50C1230ABB1B00DB32E3 /* API */ = {
@@ -124,13 +128,22 @@
 			path = BenzinLitreCustomCell;
 			sourceTree = "<group>";
 		};
+		ED6765CE230EABB000DCFA07 /* PopUpCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				ED6765CF230EAC7900DCFA07 /* PopUpCustomView.swift */,
+				ED6765D3230EACBC00DCFA07 /* PopUpCustomView.xib */,
+			);
+			path = PopUpCustomView;
+			sourceTree = "<group>";
+		};
 		EDA2D6D6230AA8B8002694BE = {
 			isa = PBXGroup;
 			children = (
 				EDA2D6E1230AA8B8002694BE /* benzinLitre */,
 				EDA2D6E0230AA8B8002694BE /* Products */,
-				C55CE3264279EDE793DB8FCC /* Pods */,
-				1E1BE8DAC5E212883B3BF093 /* Frameworks */,
+				BBED3965F5C907967755E068 /* Pods */,
+				9837CEF29C441D1119B859D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +182,7 @@
 		EDCA6D1E230D857A0046A41D /* ListView */ = {
 			isa = PBXGroup;
 			children = (
+				ED6765CE230EABB000DCFA07 /* PopUpCustomView */,
 				ED2F50CD230B3E7200DB32E3 /* BenzinLitreCustomCell */,
 				EDA2D6E4230AA8B8002694BE /* BenzinLitreViewController.swift */,
 			);
@@ -200,11 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDA2D6F1230AA8BA002694BE /* Build configuration list for PBXNativeTarget "benzinLitre" */;
 			buildPhases = (
-				442F1320A6423178CAEA18A8 /* [CP] Check Pods Manifest.lock */,
+				A332FDA38AE09AF49B0D326E /* [CP] Check Pods Manifest.lock */,
 				EDA2D6DB230AA8B8002694BE /* Sources */,
 				EDA2D6DC230AA8B8002694BE /* Frameworks */,
 				EDA2D6DD230AA8B8002694BE /* Resources */,
-				6A441D3E3CBACEF545FA53F0 /* [CP] Embed Pods Frameworks */,
+				0A6FBB7937F2082629E5AD4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +269,7 @@
 			files = (
 				EDA2D6ED230AA8BA002694BE /* LaunchScreen.storyboard in Resources */,
 				EDA2D6EA230AA8BA002694BE /* Assets.xcassets in Resources */,
+				ED6765D4230EACBC00DCFA07 /* PopUpCustomView.xib in Resources */,
 				ED2F50CC230B3E6E00DB32E3 /* BenzinLitreCell.xib in Resources */,
 				EDA2D6E8230AA8B8002694BE /* Main.storyboard in Resources */,
 			);
@@ -263,44 +278,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		442F1320A6423178CAEA18A8 /* [CP] Check Pods Manifest.lock */ = {
+		0A6FBB7937F2082629E5AD4A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-benzinLitre/Pods-benzinLitre-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-benzinLitre/Pods-benzinLitre-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-benzinLitre/Pods-benzinLitre-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A332FDA38AE09AF49B0D326E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-benzinLitre-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A441D3E3CBACEF545FA53F0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-benzinLitre/Pods-benzinLitre-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-benzinLitre/Pods-benzinLitre-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -318,6 +332,7 @@
 				EDCA6D21230D863D0046A41D /* BenzinLitreMapViewController.swift in Sources */,
 				ED2F50C5230ACCCA00DB32E3 /* BenzinLitreResponse.swift in Sources */,
 				EDE5C955230C8EC500D0DD6E /* Double+Extension.swift in Sources */,
+				ED6765D0230EAC7900DCFA07 /* PopUpCustomView.swift in Sources */,
 				ED2F50CB230B3E6E00DB32E3 /* BenzinLitreCell.swift in Sources */,
 				EDA2D6E3230AA8B8002694BE /* AppDelegate.swift in Sources */,
 				EDE5C951230C15B500D0DD6E /* TimeInterval+Extension.swift in Sources */,
@@ -465,13 +480,13 @@
 		};
 		EDA2D6F2230AA8BA002694BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC4A510BDF6B202AB2242AF4 /* Pods-benzinLitre.debug.xcconfig */;
+			baseConfigurationReference = 0D1C6C31510C5F6D1B08DC30 /* Pods-benzinLitre.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Q92ZA8LP;
 				INFOPLIST_FILE = benzinLitre/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,13 +500,13 @@
 		};
 		EDA2D6F3230AA8BA002694BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9133EF380676AF0C534DBB6 /* Pods-benzinLitre.release.xcconfig */;
+			baseConfigurationReference = F1CCE5BF39FE426C6602B932 /* Pods-benzinLitre.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Q92ZA8LP;
 				INFOPLIST_FILE = benzinLitre/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

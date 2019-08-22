@@ -15,16 +15,11 @@ class MapKitHelper:NSObject, MKMapViewDelegate {
     let viewModel = BenzinLitreVM()
     var locationManager = LocationManagerHelper()
     var coordinateDic = [Int:(Double,Double)]()
-    var annotationTitle = "Active"
-    
-    var infoLabel = UILabel()
 
-    
-    
     func addAnnotationToMap(map:MKMapView){
         map.delegate = self
         map.userTrackingMode = .follow
-        
+        // Getting location data and add annotation for each driver
         viewModel.fetchBenzinLitreData { [weak self] in
             guard let strongSelf = self else { return }
             guard let list = strongSelf.viewModel.benzinLitreList else { return }
@@ -33,7 +28,7 @@ class MapKitHelper:NSObject, MKMapViewDelegate {
                     guard let latitude = coordinate["latitude"], let longitude = coordinate["longitude"] else { return }
                     let annotation = MKPointAnnotation()
                     annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-                    annotation.title = strongSelf.annotationTitle
+                    annotation.title = "Active"
                     if let driverId = item.id{
                         strongSelf.coordinateDic[driverId] = (latitude,longitude)
                         annotation.subtitle = "Driver ID: \(String(describing:driverId))"
@@ -48,7 +43,7 @@ class MapKitHelper:NSObject, MKMapViewDelegate {
     
     //MARK: - Custom Annotation
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        // Don't want to show a custom image if the annotation is the user's location.
+        // Check for is this customer annotation
         guard !(annotation is MKUserLocation) else {
             return nil
         }
@@ -58,27 +53,27 @@ class MapKitHelper:NSObject, MKMapViewDelegate {
             annotationView = dequeuedAnnotationView
             annotationView?.annotation = annotation
         }else{
+            // Adding call button for annotationView and the gesture
             let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MapKitHelper.callTapped))
             let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
             av.rightCalloutAccessoryView = UIButton(type: .contactAdd)
             av.rightCalloutAccessoryView!.addGestureRecognizer(tap)
             annotationView = av
         }
+        // Adding custom image for annotationView (Benzin litre custom image)
         if let annotationView = annotationView {
             annotationView.canShowCallout = true
             annotationView.image = UIImage(named: "car")
         }
-        
         return annotationView
     }
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let id = view.annotation?.title else { return }
-
-        if let driverId = Int(id!){
+        // Calculate the estimating waiting time for customer from selected driver
+        if let driverId = Int(id ?? "0"){
             if let coordinate = self.coordinateDic[driverId]{
                 self.locationManager.calculateDistanceFromGivenCordinate((coordinate.0, coordinate.1)) { (response) in
-                    self.annotationTitle = response
-                    let label = self.infoLabel
+                    let label = UILabel()
                     label.frame = CGRect(x: 0 , y: 0 , width: 200, height: 21)
                     label.textAlignment = .center
                     label.clipsToBounds = true
@@ -93,6 +88,7 @@ class MapKitHelper:NSObject, MKMapViewDelegate {
         }
     }
     @objc func callTapped(){
+        // Notify if call button tapped in the annotation view
         NotificationCenter.default.post(name:.callATaxi , object: nil)
     }
 }

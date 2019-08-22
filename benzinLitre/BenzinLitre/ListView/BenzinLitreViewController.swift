@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftEntryKit
+import MapKit
 
 class BenzinLitreViewController: UIViewController{
     
@@ -43,6 +45,7 @@ class BenzinLitreViewController: UIViewController{
             strongSelf.refreshControl.endRefreshing()
         }
     }
+    
     @objc func reloadData(){
         guard let view = benzinLitreTV else { return }
         view.reloadData()
@@ -50,7 +53,7 @@ class BenzinLitreViewController: UIViewController{
 }
 
 //MARK:- TableView func
-extension BenzinLitreViewController: UITableViewDelegate, UITableViewDataSource {
+extension BenzinLitreViewController: UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let cellCount = viewModel.benzinLitreList?.count else { return 0}
         return cellCount
@@ -66,6 +69,7 @@ extension BenzinLitreViewController: UITableViewDelegate, UITableViewDataSource 
             cell.configureCell(benzinLitreItem: benzinLitreItem)
         }
         if locationManager.arrowRotateDegreeArray.count > 0 {
+            // Rotate the arrow image according to user heading for pointing the veichle
             cell.arrowImage.transform =  CGAffineTransform(rotationAngle: CGFloat(locationManager.arrowRotateDegreeArray[indexPath.row].degreesToRadians()))
         }
         return cell
@@ -75,11 +79,72 @@ extension BenzinLitreViewController: UITableViewDelegate, UITableViewDataSource 
             let item = benzinLitreList[indexPath.row]
             if let coordinate = item.coordinate{
                 guard let latitude = coordinate["latitude"], let longitude = coordinate["longitude"] else { return }
-                locationManager.calculateDistanceFromGivenCordinate((latitude, longitude)) { (response) in
-                    print(response)
+
+                if let customView = Bundle.main.loadNibNamed("PopUpCustomView", owner: self, options: nil)!.first as? PopUpCustomView {
+                    // Add annotation
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                    annotation.title = "Call This Taxi"
+                    customView.map.delegate = self
+                    customView.restorationIdentifier = "PopUpCustomView"
+                    customView.map.userTrackingMode = .followWithHeading
+                    customView.map.addAnnotation(annotation)
+                    customView.layer.cornerRadius = 10
+                    customView.clipsToBounds = true
+                    locationManager.calculateDistanceFromGivenCordinate((latitude, longitude)) { (response) in
+                        customView.estimatedTimeLabel.text = response
+                    }
+
+                    // Create a basic toast that appears at the top
+                    var attributes = EKAttributes.centerFloat
+                    attributes.scroll = .enabled(swipeable: true, pullbackAnimation: .jolt)
+                    attributes.positionConstraints.size.height = .constant(value: 250)
+                    attributes.entryBackground = .color(color: .white)
+                    attributes.entryInteraction = .absorbTouches
+                    attributes.entranceAnimation = .translation
+                    attributes.exitAnimation = .translation
+                    attributes.screenInteraction = .dismiss
+                    attributes.displayDuration = .infinity
+                    attributes.lifecycleEvents.willDisappear = {
+                        // Remove all annotation before popUp closed it caused crash (SwiftEntryKit)
+                        let allAnnotation = customView.map.annotations
+                        customView.map.removeAnnotations(allAnnotation)
+                    }
+                    // Display the view with the configuration
+                    SwiftEntryKit.display(entry: customView, using: attributes)
                 }
             }
         }
     }
-    
+    //TODO: Organize here
+    //MARK: - Custom Annotation
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        // Check for is this customer annotation
+        guard !(annotation is MKUserLocation) else {
+            return nil
+        }
+        let annotationIdentifier = "AnnotationIdentifier"
+        var annotationView: MKAnnotationView?
+        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier) {
+            annotationView = dequeuedAnnotationView
+            annotationView?.annotation = annotation
+        }else{
+            // Adding call button for annotationView and the gesture
+            let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.callTapped))
+            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
+            av.rightCalloutAccessoryView = UIButton(type: .contactAdd)
+            av.rightCalloutAccessoryView!.addGestureRecognizer(tap)
+            annotationView = av
+        }
+        // Adding custom image for annotationView (Benzin litre custom image)
+        if let annotationView = annotationView {
+            annotationView.canShowCallout = true
+            annotationView.image = UIImage(named: "car")
+        }
+        return annotationView
+    }
+    @objc func callTapped() {
+        // TODO: implementation the call taxi logic
+        print("Taxi called")
+    }
 }

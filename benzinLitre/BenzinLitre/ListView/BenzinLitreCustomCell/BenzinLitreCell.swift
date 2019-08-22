@@ -12,7 +12,7 @@ class BenzinLitreCell: UITableViewCell {
     
     //MARK:- Variables
     static let identifier = "BenzinLitreCell"
-    static let estimatedRowHeight: CGFloat = 200
+    static let estimatedRowHeight: CGFloat = 96
     
     //MARK:- IBOutlets
     

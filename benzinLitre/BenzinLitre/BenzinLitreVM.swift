@@ -15,7 +15,7 @@ class BenzinLitreVM {
     //MARK:- Variables
     let api = BenzinLitreApi()
     var benzinLitreList: [BenzinLitreData]? = nil
-
+    
     func fetchBenzinLitreData(completion: @escaping () -> Void){
         api.fetchBenzinLitreData { [weak self] (response) in
             guard let strongSelf = self else { return }

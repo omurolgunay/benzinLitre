@@ -8,5 +8,5 @@ target 'benzinLitre' do
   # Pods for benzinLitre
   pod 'ObjectMapper'
   pod 'AlamofireObjectMapper'
-
+  pod 'SwiftEntryKit'
 end
